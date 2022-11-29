@@ -1,9 +1,10 @@
-import { Application } from "@hotwired/stimulus"
+/* eslint-disable */
+import { Application } from '@hotwired/stimulus';
 
-const application = Application.start()
+export const application = Application.start();
 
 // Configure Stimulus development experience
-application.debug = false
-window.Stimulus   = application
+application.debug = false;
+window.Stimulus = application;
 
-export { application }
+export { application };

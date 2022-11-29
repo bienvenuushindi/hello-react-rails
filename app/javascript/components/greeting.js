@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Greeting = (props) => {
-    const {message} = props
-    return (
-        <div>
-            {message || 'Loading Greeting'}
-        </div>
-    )
-}
-
-Greeting.propTypes = {
-    message: PropTypes.string.isRequired,
+  const { message } = props;
+  return (
+    <div>
+      {message || 'Loading Greeting ...'}
+    </div>
+  );
 };
 
-export default Greeting
+Greeting.propTypes = {
+  message: PropTypes.string.isRequired,
+};
+
+export default Greeting;
