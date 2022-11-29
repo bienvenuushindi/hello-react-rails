@@ -4,9 +4,6 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 import Greeting from './components/greeting';
 import { fetchGreetings } from './redux/actions';
 import store from './redux/store';
-// Entry point for the build script in your package.json
-// import "@hotwired/turbo-rails"
-// import "./controllers"
 
 function App() {
   const dispatch = useDispatch();
@@ -17,7 +14,7 @@ function App() {
   return (
     <>
       <h1>Get a random greeting</h1>
-      <Greeting message={greetings[Math.floor(Math.random() * greetings.length)]} />
+      <Greeting message={greetings} />
     </>
   );
 }

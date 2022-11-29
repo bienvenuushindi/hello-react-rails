@@ -5,6 +5,7 @@ const load = async () => {
   await fetch(url).then((res) => res.json()).then((data) => {
     result = [...data];
   });
+
   return result;
 };
 
