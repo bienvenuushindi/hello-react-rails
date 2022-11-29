@@ -1,6 +1,6 @@
 class Api::GreetingsController < ApplicationController
   def index
-    @greetings = Greeting.all
+    @greetings = Greeting.pluck(:message)
     render json: @greetings
   end
 end
